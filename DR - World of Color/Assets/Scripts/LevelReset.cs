@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelReset : MonoBehaviour
 {
     public ParticleSystem explosion;
-    public GameObject GameOver;
 
     public void GameOver()
     {
@@ -18,7 +17,8 @@ public class LevelReset : MonoBehaviour
 
     void Reload ()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+
     }
 
     void Start()
